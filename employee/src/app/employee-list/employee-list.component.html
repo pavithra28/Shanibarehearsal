@@ -1,0 +1,25 @@
+<h3>List of Employees</h3>
+<div class="uForm">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>DOB</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees |async">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.salary}}</td>
+            <td>{{employee.dob}}</td>
+            <td>{{employee.gender}}</td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+
